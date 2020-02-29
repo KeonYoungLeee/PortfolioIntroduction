@@ -1,2 +1,0 @@
-# PortfolioIntroduction
-私のポートフォリオサイト
