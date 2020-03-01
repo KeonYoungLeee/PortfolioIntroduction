@@ -1,0 +1,238 @@
+section {
+  position: absolute;
+  top: 50px;
+  left: 353px;
+}
+
+.about, .protfolit, .skils, .contact {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.about h1 {
+  color: white;
+  font-size: 80px;
+  margin-bottom: 12px;
+}
+
+.about .name {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.about .engineer {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+
+.protfolit h1 {
+  color: white;
+  font-size: 80px;
+  margin-bottom: 12px;
+}
+
+.protfolit .information {
+  display: flex;
+  text-align: center;
+}
+
+.protfolit .information .images {
+  width: 100%;
+  height: 100%;
+}
+
+.protfolit .information {
+  margin-top: 30px;
+}
+
+.protfolit .information .images img {
+  width: 100%;
+  height: 100%;
+}
+
+.protfolit .information .content {
+  width: 300px;
+  height: 250px;
+  text-align: left;
+}
+
+.skils h1 {
+  color: white;
+  font-size: 80px;
+  margin-bottom: 12px;
+}
+.skils .frontEnd, .backEnd, .other {
+  margin-bottom: 77px;
+}
+
+.skils .frontEnd h2, .backEnd h2, .other h2 {
+  margin-bottom: 15px;
+}
+
+.skils i {
+  font-size: 70px;
+  margin-right: 30px;
+}
+
+.skils h2 {
+  font-size: 37px;
+}
+
+.contact {
+  margin-bottom: 200px;
+}
+
+.contact h1 {
+  color: white;
+  font-size: 80px;
+  margin-bottom: 12px;
+}
+
+.contact i {
+  font-size: 70px;
+  margin-right: 30px;
+}
+
+
+
+/* box design */
+.box {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #060c21;
+  margin-right: 50px;
+  overflow: hidden;
+  border: 1px solid white;
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(13px);
+
+}
+
+.box .glass{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  display: block;
+  background: rgba(255, 255, 255, .1);
+  pointer-events: none;
+}
+
+.box .content {
+  padding: 20px;
+  color: #fff;
+}
+
+.box .content h2{
+  font-size: 37px;
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+.box .content .result {
+  font-size: 16px;
+  margin: 11px 0px 3px 0px;
+  color: #00ff89;
+}
+
+.box .content p{
+  color: #fff;
+  line-height: 18px;
+}
+
+input,
+.toggle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+  outline: none;
+  z-index: 10;
+}
+
+input {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.toggle {
+  pointer-events: none;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: 0.5s;
+  text-align: center;
+  line-height: 50px;
+  font-size: 36px;
+  box-shadow: 0 0 0 0px rgb(0, 0, 0);
+  /* box-shadow: 0 0 0 0px rgb(223, 223, 223); */
+}
+
+input:checked ~ .toggle {
+  box-shadow: 0 0 0 500px rgb(0, 0, 0);
+  /* box-shadow: 0 0 0 500px rgb(223, 223, 223); */
+  transform: rotate(225deg);
+}
+
+.content, .detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.detail {
+  padding: 9px;
+  z-index: 11;
+  pointer-events: none;
+  transition: 0.5s;
+  opacity: 0;
+  text-align: left;
+}
+
+input:checked ~ .detail {
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+.detail h2 {
+  font-size: 25px;
+  color: #ffffff;
+  margin-bottom: 9px;
+  font-weight: bold;
+}
+
+.detail .details_title {
+  font-size: 16px;
+  margin: 11px 0px 3px 0px;
+  color: #00ff89;
+}
+
+.detail .details_subtitle {
+  font-size: 13px;
+  color: ghostwhite;
+}
+
+
+/* contact */
+.contact .contact_box {
+  display: flex;
+  align-items: center;
+}

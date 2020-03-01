@@ -3,9 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ポートフォリオ</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>index</title>
 </head>
 <body>
-  test
+  <header>
+    <div class="photo">
+      <p><img src="./images/me.png" ></p>
+    </div>
+    <div class="header_content">
+      <a href="#about"><p>ABOUT</p></a>
+      <a href="#portfolio"><p>PORTFOLIO</p></a>
+      <a href="#skils"><p>SKILS</p></a>
+      <a href="#contact"><p>CONTACT</p></a>
+    </div>
+  </header>
+
+  <section>
+    <div class="about" id="about">
+      <h1>ABOUT</h1>
+      <p class="name"><span class="font_bold">李健榮(イ ゴンヨン)</span></p>
+      <p class="engineer">Front-end engineers</p>
+      <p class="information">自己紹介</p>
+      <p class="about_content">私のポートフォリオホームページに訪問してくださったお客様または皆様ありがとうございます。</p>
+    </div>
+
+    <div class="hr"></div>
+
+    <div class="protfolit" id="portfolio">
+      <h1>PORTFOLIO</h1>
+      <div class="information">
+        <div class="box">
+          <div class="images">
+            <img src="./images/FullStackProject.png" >
+          </div>
+        </div>
+        <div class="box">
+          <input type="checkbox" name="">
+          <div class="toggle">+</div>
+          <div class="detail">
+            <h2>TECHNOLOGY</h2>
+            <p class="details_title">Front-End</p>
+            <p class="details_subtitle">React, Next, Redux, Redux-saga Styled Components</p>
+            <p class="details_title">Back-End</p>
+            <p class="details_subtitle">MySQL(ORM), NodeJS, express, passprot, multer</p> 
+            <p class="details_title">その他</p>
+            <p class="details_subtitle">AWS(S2, S3, Lambda, RDS), git, GitHub</p>
+          </div>
+          <div class="glass"></div>
+          <div class="content"> 
+            <h2>NodeBird</h2>
+            <p>日常的なSNSを製作(中)</p>
+            <p class="result">
+              <a href="https://github.com/KeonYoungLeee/React-nodebird" target="_blank">ソースコード</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="information">
+        <div class="box">
+          <div class="images">
+            <img src="./images/kakaoScreen.png" >
+          </div>
+        </div>
+        <div class="box">
+          <input type="checkbox" name="">
+          <div class="toggle">+</div>
+          <div class="detail">
+            <h2>TECHNOLOGY</h2>
+            <p class="details_title">Front-End</p>
+            <p class="details_subtitle">HTML, CSS</p>
+            <p class="details_title">その他</p>
+            <p class="details_subtitle">git, GitHub</p>
+          </div>
+          <div class="glass"></div>
+          <div class="content">
+            <h2>kakaoClone</h2>
+            <p>HTML, CSSの勉強の為、カカオトークの画面を制作(完了)</p>
+            <p class="result"> 
+              <a href="https://keonyoungleee.github.io/kakao-clone/" target="_blank">結果</a>
+            </p>
+            <p class="result">
+              <a href="https://github.com/KeonYoungLeee/kakao-clone" target="_blank">ソースコード</a>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hr"></div>
+    <div class="skils" id="skils">
+      <h1>SKILS</h1>
+      <div class="frontEnd">
+        <h2>Front-End</h2>
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-css3-alt"></i>
+        <i class="fab fa-js"></i>
+        <i class="fab fa-react"></i>
+        <i class="fab fa-angular"></i>
+      </div>
+      <div class="backEnd">
+        <h2>Back-End</h2>
+        <i class="fab fa-node"></i>
+        <i class="fab fa-java"></i>
+      </div>
+      <div class="other">
+        <h2>The Others</h2>
+        <i class="fab fa-aws"></i>
+        <i class="fab fa-git-alt"></i>
+        <i class="fab fa-npm"></i>
+      </div>
+    </div>
+    <div class="hr"></div>
+    <div class="contact" id="contact">
+      <h1>CONTACT</h1>
+      <div class="contact_box"><a href="mailto:ygy5036@gmail.com"><i class="fas fa-envelope"></i></a><p class="email">ygy5036@gmail.com</p></div>
+      <div class="contact_box"><a href="https://github.com/KeonYoungLeee"><i class="fab fa-github"></i></a><p class="github">https://github.com/KeonYoungLeee</p></div>
+    </div>
+  </section>
 </body>
 </html>
